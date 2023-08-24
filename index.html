@@ -33,24 +33,28 @@
         <section class="order-input">
             <div class="container">
                 <div class="QRcode">
-                    <label for="QRcode">バーコードスキャン</label><input type="text" class="input-style">
+                    <label for="QRcode">バーコードスキャン</label>
+                    <input type="text" class="input-style">
                 </div>
                 <div class="order-amount">
-                    <label for="order-amount">発注数</label><input type="number" class="input-style">
+                    <label for="order-amount">発注数</label>
+                    <input type="number" class="input-style">
                 </div>
                 <div class="delivery-date">
                     <label for="delivery-date">納品日</label>
                     <input type="date" class="input-style" value="ddd">
                 </div>
                 <div class="handover-date">
-                    <label for="handover-date">引渡し日</label><input type="text" id = "srt" disabled class="input-style">
+                    <label for="handover-date">引渡し日</label>
+                    <input type="text" id="srt" disabled class="input-style">
                 </div>
                 <div class="order-date">
-                    <label for="order-date">発注日</label><input type="date" class="input-style">
+                    <label for="order-date">発注日</label>
+                    <input type="date" class="input-style">
                 </div>
                 <div class="order-memo">
-                    <label for="order-memo">メモ</label><textarea name="memo" id="myTextarea"
-                        placeholder="全角70文字まで（半角では１４０文字）" rows="7"></textarea>
+                    <label for="order-memo">メモ</label>
+                    <textarea name="memo" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）" rows="7"></textarea>
                 </div>
             </div>
         </section>
@@ -60,22 +64,32 @@
                     <p>メーカー名 :</p>
                     <p>asfdsafa</p>
                 </div>
+            </div>
+            <div class="container">
                 <div class="product-name">
                     <p>商品名 :</p>
                     <p>sfadfadfasf</p>
                 </div>
+            </div>
+            <div class="container">
                 <div class="standard">
                     <p>規格 :</p>
                     <p>asfdafsa</p>
                 </div>
+            </div>
+            <div class="container">
                 <div class="order-unit">
                     <p>発注単位 :</p>
                     <p>asfafsa</p>
                 </div>
+            </div>
+            <div class="container">
                 <div class="quantity">
                     <p>入数 :</p>
                     <p>asdfa</p>
                 </div>
+            </div>
+            <div class="container">
                 <div class="supplier-name">
                     <p>仕入先名 :</p>
                     <p>afsdafa</p>
@@ -87,25 +101,7 @@
         </section>
     </main>
     <footer></footer>
-    <script>
-        n = new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        d = n.getDate();
-        if( m < 9 ){
-            m = "0" + m; 
-        }
-        if ( d < 9 ){ 
-            m = "0" + d;
-        }
-        document.getElementById("delivery_date").innerHTML = m + "/" + d + "/" + y;
-        document.getElementById("delivery_date").value = m + "/" + d + "/" + y;
-
-        function run() {
-            document.getElementById("srt").value = document.getElementById("selected_date").value;
-            console.log(document.getElementById("srt").value);
-        } 
-    </script>
+    <script src="./assets/script/input.js"></script>
 </body>
 
 </html>
