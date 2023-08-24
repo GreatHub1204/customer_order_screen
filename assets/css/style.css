@@ -1,0 +1,154 @@
+/* common css */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+main{
+    width: 100%;
+}
+
+.container {
+    max-width: 1720px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+p {
+    font-size: 20px;
+    font-family: "A-OTF Gothic MB101 Pro";
+    margin: 0;
+}
+
+/* header section style start */
+.store-info {
+    margin: 20px 0;
+}
+
+.order-screen {
+    background-image: linear-gradient(to bottom, #FED92B, #C1A417);
+}
+
+.order-screen p {
+    margin-left: 26px;
+}
+
+/* header section style end */
+
+
+/* main section style start */
+
+.origin-info {
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+}
+
+.origin-info p {
+    border-bottom: solid 1px #959595;
+}
+
+.changed-info {
+    display: flex;
+    justify-content: end;
+}
+
+.changed-info p {
+    color: #959595;
+}
+
+.order-input {
+    margin-top: 20px;
+    width: 550px;
+    margin-inline: auto;
+    text-align: right;
+}
+
+.input-style {
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    border: solid 1px #A8CD8F;
+}
+
+.input-style:focus {
+    border: solid 1px #A8CD8F;
+    border: none;
+}
+
+.order-memo {
+    display: inline-flex;
+    align-items: center;
+}
+
+textarea {
+    width: 350px;
+    margin-left: 42px;
+    border: solid 1px #A8CD8F;
+
+}
+
+.display-info {
+    margin-top: 20px;
+}
+
+.display-info .container div{
+    display: flex;
+}
+
+.display-info .container div p:first-child {
+    width: 44%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 42px;
+}
+
+.manufacture-name, .product-name, .standard{
+    color: #2E75B6;
+}
+
+.register-button {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+}
+
+.register-button button{
+    width: 280px;
+    height: 70px;
+    font-size: 28px;
+    color: #ffffff;
+    border-radius: 21px;
+    margin-inline: auto;
+    background-image: linear-gradient(to right, #70AD47, #397D0D);
+    border: none;
+
+}
+
+
+/* main section style end */
