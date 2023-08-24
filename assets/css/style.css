@@ -39,6 +39,14 @@ main {
     width: 100%;
 }
 
+.font1 {
+    font-size: 20px;
+}
+
+.font2 {
+    font-size: 16px;
+}
+
 .container {
     max-width: 1720px;
     width: 100%;
@@ -169,6 +177,8 @@ textarea {
 /* ##########   style for order-history   #############*/
 
 /* main section style start */
+
+/* section tools */
 section.tools .container .date-type {
     display: flex;
 }
@@ -227,7 +237,102 @@ section.tools .container .search-button {
 }
 
 .add-style {
-    padding: 55px 20px;
+    padding: 20px 20px;
+}
+
+/* section table */
+.column-1 {
+    width: 259px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.column-2 {
+    width: 520px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-3 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-4 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-5 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-6 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-7 {
+    width: 200px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-8 {
+    width: 340px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.add-border {
+    border-top: none;
+    border-bottom: none;
+    padding: 2px 0;
+}
+
+.list-comment {
+    height: 30px;
+    background-color: #DEF3D6;
+}
+
+.list-comment p {
+    padding: 0 15px;
+    font-family: "A-OTF Gothic MB101 Pro";
+    font-size: 16px;
+}
+
+.triplets-button {
+    width: 88px;
+    height: 30px;
+    margin-inline: 2%;
+    border-radius: 10px;
+    border: solid 1px #707070;
+}
+
+.list-correction-button {
+    background-color: #4A9F2C;
+    color: #ffffff;
+}
+
+.list-remove-button {
+    background-color: #F2CF27;
+}
+
+.list-delivery-button {
+    background-color: #F51C48;
+    color: #ffffff;
 }
 
 /* main section style end */
