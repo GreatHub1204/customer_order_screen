@@ -26,7 +26,16 @@ img {
     height: auto;
     vertical-align: bottom;
 }
-main{
+
+.flex {
+    display: flex;
+}
+
+.vertical-align {
+    align-items: center;
+}
+
+main {
     width: 100%;
 }
 
@@ -93,6 +102,7 @@ p {
     margin-bottom: 10px;
     margin-left: 42px;
     border: solid 1px #A8CD8F;
+    outline: solid 1px #A8CD8F;
 }
 
 .input-style:focus {
@@ -116,7 +126,7 @@ textarea {
     margin-top: 20px;
 }
 
-.display-info .container div{
+.display-info .container div {
     display: flex;
 }
 
@@ -128,7 +138,9 @@ textarea {
     margin-right: 42px;
 }
 
-.manufacture-name, .product-name, .standard{
+.manufacture-name,
+.product-name,
+.standard {
     color: #2E75B6;
 }
 
@@ -138,7 +150,7 @@ textarea {
     display: flex;
 }
 
-.register-button button{
+.register-button button {
     width: 280px;
     height: 70px;
     font-size: 28px;
@@ -150,5 +162,72 @@ textarea {
 
 }
 
+
+/* main section style end */
+
+
+/* ##########   style for order-history   #############*/
+
+/* main section style start */
+section.tools .container .date-type {
+    display: flex;
+}
+
+section.tools .container .date-type div {
+    margin-right: 30px;
+}
+
+section.tools .container .period {
+    width: 30%;
+    justify-content: space-between;
+    margin-right: 68px;
+}
+
+section.tools .container .period .period-input-style {
+    width: 176px;
+    height: 30px;
+    text-align: center;
+    outline: solid 1px #A8CD8F;
+    border: solid 1px #A8CD8F;
+}
+
+section.tools .container .display-button {
+    width: 91px;
+    height: 53px;
+    margin-right: 135px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2F75B5, #184F81);
+}
+
+section.tools .container .QRcode-search {
+    width: 387px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+section.tools .container .QRcode-search .input-QRcode-style {
+    width: 250px;
+    height: 30px;
+    border: solid 1px #A8CD8F;
+    text-align: center;
+    outline: solid 1px #A8CD8F;
+}
+
+section.tools .container .search-button {
+    width: 91px;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2F75B5, #184F81);
+}
+
+.add-style {
+    padding: 55px 20px;
+}
 
 /* main section style end */

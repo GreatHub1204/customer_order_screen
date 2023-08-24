@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発注履歴画面</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <div class="store-info">
+                <P>[店舗] <span>999: 渋谷店</span> 【担当】<span>山田太郎</span> </P>
+            </div>
+            <div class="order-screen">
+                <p>発注履歴画面</p>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+    <main>
+        <section class="tools">
+            <div class="container flex vertical-align add-style">
+                <div class="date-type">
+                    <div>
+                        <input type="radio" name="select-date-type">
+                        <label for="register-date">登録日</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="select-date-type">
+                        <label for="ordered-date">発注日</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="select-date-type">
+                        <label for="delivery-date">納品日</label>
+                    </div>
+                </div>
+                <div class="period flex">
+                    <input type="date" class="period-input-style">
+                    <p>~</p>
+                    <input type="date" class="period-input-style">
+                </div>
+                <button class="display-button">表 示</button>
+                <div class="QRcode-search flex">
+                    <label for="JAN">JAN コード</label>
+                    <input type="number" class="input-QRcode-style">
+                </div>
+                <button class="search-button">検 索</button>
+            </div>
+        </section>
+        <section class="order-history">
+            <div class="container">
+                <table>
+                    <thead></thead>
+                    <tr></tr>
+                    <tr></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
