@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客注発注画面</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="store-info">
+                <P>[店舗] <span>999: 渋谷店</span> 【担当】<span>山田太郎</span> </P>
+            </div>
+            <div class="order-screen">
+                <p>客注発注画面</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="register-info">
+            <div class="container">
+                <div class="origin-info">
+                    <p>登録日: 2023年 8月 22日 08時 01分 テスト太郎 </p>
+                </div>
+                <div class="changed-info">
+                    <p>更新日: 2023年 8月 22日 08時 02分 テスト花子 </p>
+                </div>
+            </div>
+        </section>
+        <section class="order-input">
+            <div class="container">
+                <div class="QRcode">
+                    <label for="QRcode">バーコードスキャン</label>
+                    <input type="text" class="input-style">
+                </div>
+                <div class="order-amount">
+                    <label for="order-amount">発注数</label>
+                    <input type="number" class="input-style">
+                </div>
+                <div class="delivery-date">
+                    <label for="delivery-date">納品日</label>
+                    <input type="date" class="input-style" value="ddd">
+                </div>
+                <div class="handover-date">
+                    <label for="handover-date">引渡し日</label>
+                    <input type="text" id="srt" disabled class="input-style">
+                </div>
+                <div class="order-date">
+                    <label for="order-date">発注日</label>
+                    <input type="date" class="input-style">
+                </div>
+                <div class="order-memo">
+                    <label for="order-memo">メモ</label>
+                    <textarea name="memo" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）" rows="7"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="display-info">
+            <div class="container">
+                <div class="manufacture-name">
+                    <p>メーカー名 :</p>
+                    <p>asfdsafa</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="product-name">
+                    <p>商品名 :</p>
+                    <p>sfadfadfasf</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="standard">
+                    <p>規格 :</p>
+                    <p>asfdafsa</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="order-unit">
+                    <p>発注単位 :</p>
+                    <p>asfafsa</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="quantity">
+                    <p>入数 :</p>
+                    <p>asdfa</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="supplier-name">
+                    <p>仕入先名 :</p>
+                    <p>afsdafa</p>
+                </div>
+            </div>
+        </section>
+        <section class="register-button">
+            <button>登 録</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./assets/script/input.js"></script>
+</body>
+
+</html>
