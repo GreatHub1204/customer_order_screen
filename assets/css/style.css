@@ -26,8 +26,25 @@ img {
     height: auto;
     vertical-align: bottom;
 }
-main{
+
+.flex {
+    display: flex;
+}
+
+.vertical-align {
+    align-items: center;
+}
+
+main {
     width: 100%;
+}
+
+.font1 {
+    font-size: 20px;
+}
+
+.font2 {
+    font-size: 16px;
 }
 
 .container {
@@ -93,6 +110,7 @@ p {
     margin-bottom: 10px;
     margin-left: 42px;
     border: solid 1px #A8CD8F;
+    outline: solid 1px #A8CD8F;
 }
 
 .input-style:focus {
@@ -116,7 +134,7 @@ textarea {
     margin-top: 20px;
 }
 
-.display-info .container div{
+.display-info .container div {
     display: flex;
 }
 
@@ -128,7 +146,9 @@ textarea {
     margin-right: 42px;
 }
 
-.manufacture-name, .product-name, .standard{
+.manufacture-name,
+.product-name,
+.standard {
     color: #2E75B6;
 }
 
@@ -138,7 +158,7 @@ textarea {
     display: flex;
 }
 
-.register-button button{
+.register-button button {
     width: 280px;
     height: 70px;
     font-size: 28px;
@@ -150,5 +170,169 @@ textarea {
 
 }
 
+
+/* main section style end */
+
+
+/* ##########   style for order-history   #############*/
+
+/* main section style start */
+
+/* section tools */
+section.tools .container .date-type {
+    display: flex;
+}
+
+section.tools .container .date-type div {
+    margin-right: 30px;
+}
+
+section.tools .container .period {
+    width: 30%;
+    justify-content: space-between;
+    margin-right: 68px;
+}
+
+section.tools .container .period .period-input-style {
+    width: 176px;
+    height: 30px;
+    text-align: center;
+    outline: solid 1px #A8CD8F;
+    border: solid 1px #A8CD8F;
+}
+
+section.tools .container .display-button {
+    width: 91px;
+    height: 53px;
+    margin-right: 135px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2F75B5, #184F81);
+}
+
+section.tools .container .QRcode-search {
+    width: 387px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+section.tools .container .QRcode-search .input-QRcode-style {
+    width: 250px;
+    height: 30px;
+    border: solid 1px #A8CD8F;
+    text-align: center;
+    outline: solid 1px #A8CD8F;
+}
+
+section.tools .container .search-button {
+    width: 91px;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2F75B5, #184F81);
+}
+
+.add-style {
+    padding: 20px 20px;
+}
+
+/* section table */
+.column-1 {
+    width: 259px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.column-2 {
+    width: 520px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-3 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-4 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-5 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-6 {
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-7 {
+    width: 200px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.column-8 {
+    width: 340px;
+    text-align: center;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.add-border {
+    border-top: none;
+    border-bottom: none;
+    padding: 2px 0;
+}
+
+.list-comment {
+    height: 30px;
+    background-color: #DEF3D6;
+}
+
+.list-comment p {
+    padding: 0 15px;
+    font-family: "A-OTF Gothic MB101 Pro";
+    font-size: 16px;
+}
+
+.triplets-button {
+    width: 88px;
+    height: 30px;
+    margin-inline: 2%;
+    border-radius: 10px;
+    border: solid 1px #707070;
+}
+
+.list-correction-button {
+    background-color: #4A9F2C;
+    color: #ffffff;
+}
+
+.list-remove-button {
+    background-color: #F2CF27;
+}
+
+.list-delivery-button {
+    background-color: #F51C48;
+    color: #ffffff;
+}
 
 /* main section style end */
