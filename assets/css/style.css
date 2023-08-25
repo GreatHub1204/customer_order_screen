@@ -47,6 +47,10 @@ main {
     font-size: 16px;
 }
 
+textarea {
+    outline: solid 1px #A8CD8F;
+}
+
 .container {
     max-width: 1720px;
     width: 100%;
@@ -315,7 +319,7 @@ section.tools .container .search-button {
 
 .triplets-button {
     width: 88px;
-    height: 30px;
+    height: 40px;
     margin-inline: 2%;
     border-radius: 10px;
     border: solid 1px #707070;
