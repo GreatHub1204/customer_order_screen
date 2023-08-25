@@ -26,15 +26,15 @@
             <div class="container flex vertical-align add-style">
                 <div class="date-type">
                     <div>
-                        <input type="radio" name="select-date-type">
+                        <input type="radio" id = "register-date" name="select-date-type">
                         <label for="register-date">登録日</label>
                     </div>
                     <div>
-                        <input type="radio" name="select-date-type">
+                        <input type="radio" id="ordered-date" name="select-date-type">
                         <label for="ordered-date">発注日</label>
                     </div>
                     <div>
-                        <input type="radio" name="select-date-type">
+                        <input type="radio" id="delivery-date" name="select-date-type">
                         <label for="delivery-date">納品日</label>
                     </div>
                 </div>
@@ -82,36 +82,89 @@
                     </div>
                 </div>
                 <div class="list-body">
-                    <div class="list-body-row flex">
-                        <div class="column-1 add-border">
-                            <p class="font2">4901234567890</p>
+                    <div>
+                        <div class="list-body-row flex">
+                            <div class="column-1 add-border">
+                                <p class="font2">4901234567890</p>
+                            </div>
+                            <div class="column-2 add-border">
+                                <p class="font2">あいうえおかきくけこさしすせそたちってと</p>
+                            </div>
+                            <div class="column-3 add-border">
+                                <p class="font2">20</p>
+                            </div>
+                            <div class="column-4 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-5 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-6 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-7 add-border">
+                                <p class="font2">テスト太郎</p>
+                            </div>
+                            <div class="column-8 add-border">
+                                <div>
+                                    <button class="triplets-button list-correction-button">
+                                        <p class="font2">修正</p>
+                                    </button>
+                                    <button class="triplets-button list-remove-button">
+                                        <p class="font2">削除</p>
+                                    </button>
+                                    <button class="triplets-button list-delivery-button">
+                                        <p class="font2">引渡</p>
+                                    </button>
+                                </div>
+                                <P style="display: none;">引渡済</P>
+                            </div>
                         </div>
-                        <div class="column-2 add-border">
-                            <p class="font2">あいうえおかきくけこさしすせそたちってと</p>
-                        </div>
-                        <div class="column-3 add-border">
-                            <p class="font2">20</p>
-                        </div>
-                        <div class="column-4 add-border">
-                            <p class="font2">12/10</p>
-                        </div>
-                        <div class="column-5 add-border">
-                            <p class="font2">12/10</p>
-                        </div>
-                        <div class="column-6 add-border">
-                            <p class="font2">12/10</p>
-                        </div>
-                        <div class="column-7 add-border">
-                            <p class="font2">テスト太郎</p>
-                        </div>
-                        <div class="column-8 add-border">
-                            <button class="triplets-button list-correction-button"><p class="font2">修正</p></button>
-                            <button class="triplets-button list-remove-button"><p class="font2">削除</p></button>
-                            <button class="triplets-button list-delivery-button"><p class="font2">引渡</p></button>
+                        <div class="list-comment vertical-align flex">
+                            <p>注文太郎さん。電話090-123-1234入荷したら連絡してください。連終可能時間は午前中。</p>
                         </div>
                     </div>
-                    <div class="list-comment vertical-align flex">
-                        <p>注文太郎さん。電話090-123-1234入荷したら連絡してください。連終可能時間は午前中。</p>
+                    <div>
+                        <div class="list-body-row flex">
+                            <div class="column-1 add-border">
+                                <p class="font2">4901234567890</p>
+                            </div>
+                            <div class="column-2 add-border">
+                                <p class="font2">あいうえおかきくけこさしすせそたちってと</p>
+                            </div>
+                            <div class="column-3 add-border">
+                                <p class="font2">20</p>
+                            </div>
+                            <div class="column-4 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-5 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-6 add-border">
+                                <p class="font2">12/10</p>
+                            </div>
+                            <div class="column-7 add-border">
+                                <p class="font2">テスト太郎</p>
+                            </div>
+                            <div class="column-8 add-border">
+                                <div style="display: none;">
+                                    <button class="triplets-button list-correction-button">
+                                        <p class="font2">修正</p>
+                                    </button>
+                                    <button class="triplets-button list-remove-button">
+                                        <p class="font2">削除</p>
+                                    </button>
+                                    <button class="triplets-button list-delivery-button">
+                                        <p class="font2">引渡</p>
+                                    </button>
+                                </div>
+                                <P style="display: block;">引渡済</P>
+                            </div>
+                        </div>
+                        <div class="list-comment vertical-align flex">
+                            <p>注文太郎さん。電話090-123-1234入荷したら連絡してください。連終可能時間は午前中。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +174,7 @@
     <footer>
 
     </footer>
-
+<script src="./assets/script/input.js"></script>
 </body>
 
 </html>
