@@ -26,4 +26,3 @@ function run() {
     document.getElementById("srt").value = document.getElementById("selected_date").value;
     console.log(document.getElementById("srt").value);
 } 
-
