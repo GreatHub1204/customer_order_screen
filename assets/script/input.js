@@ -1,3 +1,14 @@
+let show_div = document.getElementById('memo_display_show');
+let none_div = document.getElementById('memo_display_none');
+
+show_div.style.display = "none";
+
+function show(){
+    show_div.style.display = "contents";
+    none_div.style.display = "none";
+}
+
+
 n = new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
@@ -15,3 +26,4 @@ function run() {
     document.getElementById("srt").value = document.getElementById("selected_date").value;
     console.log(document.getElementById("srt").value);
 } 
+
