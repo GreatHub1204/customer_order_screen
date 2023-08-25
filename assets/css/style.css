@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
+
+    font-family: "A-OTF Gothic MB101 Pro";
 }
 
 a {
@@ -115,11 +117,16 @@ p {
     margin-left: 42px;
     border: solid 1px #A8CD8F;
     outline: solid 1px #A8CD8F;
+    font-size: 20px;
 }
 
 .input-style:focus {
     border: solid 1px #A8CD8F;
     border: none;
+}
+
+.add-handover-padding-right {
+    padding-right: 20px;
 }
 
 .order-memo {
@@ -129,14 +136,18 @@ p {
 
 .order-memo button {
     width: 200px;
+}
 
+.add-memo-padding-right {
+    padding-right: 28%;
+    color: #9C9D9E;
 }
 
 textarea {
     width: 350px;
     margin-left: 42px;
     border: solid 1px #A8CD8F;
-
+    padding: 10px 5px 5px 10px;
 }
 
 .display-info {
