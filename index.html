@@ -52,9 +52,12 @@
                     <label for="order-date">発注日</label>
                     <input type="date" class="input-style">
                 </div>
-                <div class="order-memo">
+                <div class="order-memo" id="memo_display_show">
                     <label for="order-memo">メモ</label>
                     <textarea name="memo" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）" rows="7"></textarea>
+                </div>
+                <div class="order-memo" id="memo_display_none">
+                    <a href="javascript:show()">memo show</a>
                 </div>
             </div>
         </section>
