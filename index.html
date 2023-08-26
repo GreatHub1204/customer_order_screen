@@ -46,18 +46,18 @@
                 </div>
                 <div class="handover-date">
                     <label for="handover-date">引渡し日</label>
-                    <input type="text" id="srt" disabled class="input-style">
+                    <input type="text" id="srt" disabled class="input-style add-handover-padding-right">
                 </div>
                 <div class="order-date">
                     <label for="order-date">発注日</label>
                     <input type="date" class="input-style">
                 </div>
-                <div class="order-memo" id="memo_display_show">
+                <div class="order-memo none" id="memo_display_show">
                     <label for="order-memo">メモ</label>
-                    <textarea name="memo" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）" rows="7"></textarea>
+                    <textarea name="memo" oninput="checkInputLength()" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）"></textarea>
                 </div>
-                <div class="order-memo" id="memo_display_none">
-                    <a href="javascript:show()">memo show</a>
+                <div class="order-memo add-memo-padding-right" id="memo_display_none">
+                    <a href="#" id="memo-event">メモの追加</a>
                 </div>
             </div>
         </section>
