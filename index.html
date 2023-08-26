@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="QRcode">
                     <label for="QRcode">バーコードスキャン</label>
-                    <input type="text" class="input-style">
+                    <input type="text" id="QRcode_input" class="input-style">
                 </div>
                 <div class="order-amount">
                     <label for="order-amount">発注数</label>
@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="manufacture-name">
                     <p>メーカー名 :</p>
-                    <p>asfdsafa</p>
+                    <p></p>
                 </div>
             </div>
             <div class="container">
@@ -99,8 +99,23 @@
                 </div>
             </div>
         </section>
+        <section class="overlay overlay-hidden">
+
+        </section>
+        <section class="modal modal-hidden">
+            <div class="modal-close-button">
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-text">
+                <p>登録しますよろしいですか？</p>
+            </div>
+            <div class="modal-button-group">
+                <button class="modal-button-yes">はい</button>
+                <button class="modal-button-no">いいえ</button>
+            </div>
+        </section>
         <section class="register-button">
-            <button>登 録</button>
+            <button class="register-button-element">登 録</button>
         </section>
     </main>
     <footer></footer>

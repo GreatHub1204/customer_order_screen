@@ -27,34 +27,81 @@ function checkInputLength() {
     var limitedInput = "";
 
     for (var i = 0; i < input.length; i++) {
-      var char = input.charAt(i);
+        var char = input.charAt(i);
 
-      if (isFullWidth(char) && limitedInput.length < 70) {
-        limitedInput += char;
-      } else if (!isFullWidth(char) && limitedInput.length < 140) {
-        limitedInput += char;
-      }
+        if (isFullWidth(char) && limitedInput.length < 70) {
+            limitedInput += char;
+        } else if (!isFullWidth(char) && limitedInput.length < 140) {
+            limitedInput += char;
+        }
     }
 
     document.getElementById("myTextarea").value = limitedInput;
-  }
+}
 
-  function isFullWidth(char) {
+function isFullWidth(char) {
     var charCode = char.charCodeAt(0);
 
     if (
-      (charCode >= 0x1100 && charCode <= 0x11FF) ||
-      (charCode >= 0x2E80 && charCode <= 0xA4CF) ||
-      (charCode >= 0xAC00 && charCode <= 0xD7AF) ||
-      (charCode >= 0xF900 && charCode <= 0xFAFF) ||
-      (charCode >= 0xFE10 && charCode <= 0xFEFF) ||
-      (charCode >= 0xFF00 && charCode <= 0xFF60) ||
-      (charCode >= 0xFFE0 && charCode <= 0xFFE6)
+        (charCode >= 0x1100 && charCode <= 0x11FF) ||
+        (charCode >= 0x2E80 && charCode <= 0xA4CF) ||
+        (charCode >= 0xAC00 && charCode <= 0xD7AF) ||
+        (charCode >= 0xF900 && charCode <= 0xFAFF) ||
+        (charCode >= 0xFE10 && charCode <= 0xFEFF) ||
+        (charCode >= 0xFF00 && charCode <= 0xFF60) ||
+        (charCode >= 0xFFE0 && charCode <= 0xFFE6)
     ) {
-      return true; // Full-width character
+        return true; // Full-width character
     }
 
     return false; // Half-width character
-  }
+}
 
-  
+// 登録ボタン & modal
+
+let register = document.querySelector(".register-button-element");
+let modal = document.querySelector(".modal");
+let overlay = document.querySelector(".overlay");
+let button_yes = document.querySelector(".modal-button-yes");
+let button_no = document.querySelector(".modal-button-no");
+let modal_close = document.querySelector(".modal-close")
+
+register.addEventListener("click", function () {
+    modal.classList.remove("modal-hidden");
+    overlay.classList.remove("overlay-hidden");
+});
+
+//   button_yes.addEventListener("click", function() {
+
+//   });
+
+button_no.addEventListener("click", function () {
+    modalClose();
+});
+
+modal_close.addEventListener("click", function () {
+    modalClose();
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("modal-hidden")) {
+        modalClose();
+    }
+});
+
+function modalClose() {
+    modal.classList.add("modal-hidden");
+    overlay.classList.add("overlay-hidden");
+}
+
+// QRコード
+
+// let QRcode_input = document.getElementById("QRcode_input");
+// console.log(QRcode_input)
+//     QRcode_input.addEventListener("load", function(){
+//         QRcode_input.focus();
+//     });
+
+// function foucsOnInput() {
+
+// }
