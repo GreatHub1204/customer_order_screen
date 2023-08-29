@@ -10,12 +10,14 @@ html {
     box-sizing: inherit;
 }
 
+@import"https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap";
+
 body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
     position: relative;
-    font-family: "A-OTF Gothic MB101 Pro";
+    font-family: "HCo Gotham SSm", "Gotham", 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -65,6 +67,18 @@ textarea {
     }
 }
 
+@keyframes fade_out_show {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
 .container {
     max-width: 1720px;
     width: 100%;
@@ -73,8 +87,12 @@ textarea {
 
 p {
     font-size: 20px;
-    font-family: "A-OTF Gothic MB101 Pro";
+    font-family: "HCo Gotham SSm", "Gotham", 'Noto Sans JP', sans-serif;
     margin: 0;
+}
+
+label {
+    font-family: "HCo Gotham SSm", "Gotham", 'Noto Sans JP', sans-serif;
 }
 
 /* header section style start */
@@ -87,7 +105,7 @@ header {
 }
 
 .order-screen {
-    background-image: linear-gradient(to bottom, #FED92B, #C1A417);
+    background-color: #FED92B;
 }
 
 .order-screen p {
@@ -129,7 +147,7 @@ header {
     text-align: center;
     width: 350px;
     height: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     margin-left: 42px;
     border: solid 1px #A8CD8F;
     outline: solid 1px #A8CD8F;
@@ -193,7 +211,7 @@ textarea {
 }
 
 .display-info {
-    margin: 51px 0;
+    margin: 81px 0 20px 0;
 }
 
 .display-info.change-style {
@@ -233,12 +251,12 @@ textarea {
 
 .register-button {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
 }
 
 .register-button button {
-    width: 280px;
+    width: 180px;
     height: 70px;
     font-size: 28px;
     color: #ffffff;
@@ -265,15 +283,16 @@ section.overlay {
 
 @keyframes overlay_fade_in_show {
     0% {
-         opacity: 0;
+        opacity: 0;
     }
 
     100% {
-         opacity: 0.47;
+        opacity: 0.47;
     }
 }
 
 .overlay.overlay-hidden {
+    animation: modal_fade_in_show 0.5s;
     display: none;
 }
 
@@ -292,25 +311,33 @@ section.overlay {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid #000000;
-    opacity: 1;
     animation: modal_fade_in_show 0.5s;
+}
+
+@keyframes modal_fade_in_hidden {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .modal.modal-hidden {
     display: none;
-    opacity: 0;
-    transition: opacity 10s easy-out;
 }
 
 @keyframes modal_fade_in_show {
     0% {
-         opacity: 0;
+        opacity: 0;
     }
 
     100% {
-         opacity: 1;
+        opacity: 1;
     }
 }
+
 .modal .modal-close-button {
     display: flex;
     justify-content: end;
@@ -351,10 +378,17 @@ section.overlay {
     background-image: linear-gradient(to right, #3055E9, #2544BC);
 }
 
+.modal .modal-button-group button:first-child:hover {
+    opacity: 0.8;    
+}
+
 .modal .modal-button-group button:last-child {
     background-image: linear-gradient(to right, #F93A3A, #C10707);
 }
 
+.modal .modal-button-group button:last-child:hover {
+    opacity: 0.8;    
+}
 /* main section style end */
 
 
@@ -365,6 +399,7 @@ section.overlay {
 /* section tools */
 section.tools .container .date-type {
     display: flex;
+    width: 313px;
 }
 
 section.tools .container .date-type div {
@@ -382,6 +417,7 @@ section.tools .container .period .period-input-style {
     height: 30px;
     text-align: center;
     outline: solid 1px #A8CD8F;
+    font-size: 20px;
     border: solid 1px #A8CD8F;
 }
 
@@ -480,6 +516,11 @@ section.tools .container .search-button {
     border-left: none;
 }
 
+.column-8 .delivery-result {
+    color: #2F75B5;
+    
+}
+
 .add-border {
     border-top: none;
     border-bottom: none;
@@ -520,3 +561,7 @@ section.tools .container .search-button {
 }
 
 /* main section style end */
+
+.next-page {
+    width: 400px;
+}

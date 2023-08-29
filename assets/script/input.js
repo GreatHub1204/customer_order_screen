@@ -96,12 +96,9 @@ function modalClose() {
 
 // QRコード
 
-// let QRcode_input = document.getElementById("QRcode_input");
-// console.log(QRcode_input)
-//     QRcode_input.addEventListener("load", function(){
-//         QRcode_input.focus();
-//     });
+let code_input = document.getElementById("code_input");
+function focusOnInput() {
+    code_input.focus();
+}
 
-// function foucsOnInput() {
-
-// }
+focusOnInput();
