@@ -1,0 +1,97 @@
+@media only screen and (min-height: 1200px) {
+
+    header {
+        margin-top: 50px;
+    }
+
+    .display-info {
+        margin: 120px 0 30px 0;
+    }
+
+    .order-input {
+        margin-top: 80px;
+        width: 550px;
+        margin-inline: auto;
+        text-align: right;
+    }
+
+    .display-info.change-style {
+        margin: 27px 0 30px 0;
+        animation: slideDown 1s forwards;
+    }
+
+    .input-style {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1720px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    section.tools .container .QRcode-search {
+        width: 387px;
+        justify-content: space-between;
+        margin-right: 39px;
+    }
+
+    section.tools .container .display-button {
+        width: 91px;
+        height: 53px;
+        margin-right: 31px;
+        border-radius: 10px;
+        border: none;
+        color: #ffffff;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #2F75B5, #184F81);
+    }
+
+    section.tools .container .period {
+        width: 30%;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .triplets-button {
+        width: 56px;
+        height: 34px;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    section.tools .container .date-type {
+        width: 350px;
+    }
+
+    section.tools .container .date-type div {
+        margin-right: 10px;
+    }
+
+    section.tools .container .display-button {
+        width: 91px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    section.tools .container .search-button {
+        width: 91px;
+        height: 40px;
+    }
+
+    section.tools .container .QRcode-search {
+        width: 495px;
+        margin-right: 20px;
+    }
+}
+
+/* @media only screen and (min-height: 1920px) {
+    .register-info {
+        justify-content: center;
+    }
+} */
