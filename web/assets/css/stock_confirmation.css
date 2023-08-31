@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#wrapper {
+    height: 100svh;
+    gap: 1rem;
+}
+
+#shop-data {
+    margin-left: 100px;
+}
+
+#ttl-stock-confirmation {
+    background: #00b050;
+}
+
+#table-stock-confirmation {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#table-stock-confirmation thead {
+    background: #deebf7;
+}
+#table-stock-confirmation th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#table-stock-confirmation td {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#table-stock-confirmation th:first-child,
+#table-stock-confirmation td:first-child {
+    border-left: 1px solid;
+}
+#table-stock-confirmation .th-correction-value {
+    background: #fff2cc;
+}
+#table-stock-confirmation .th-second-row {
+    border-left: 0!important;
+    border-top: 0!important;
+}

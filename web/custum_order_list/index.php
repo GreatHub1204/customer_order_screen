@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>発注履歴確認画面</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>客注発注履歴確認画面</title>
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/../assets/css/style.css">
+    <link rel="stylesheet" href="/../assets/css/responsive.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
                 <P>[店舗] <span>999: 渋谷店</span> 【担当】<span>山田太郎</span> </P>
             </div>
             <div class="order-screen">
-                <p>発注履歴確認画面</p>
+                <p>客注発注履歴確認画面</p>
             </div>
         </div>
     </header>
@@ -175,7 +176,7 @@
     <footer>
 
     </footer>
-<script src="./assets/script/input.js"></script>
+<script src="/../assets/script/input.js"></script>
 </body>
 
 </html>

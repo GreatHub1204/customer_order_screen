@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#wrapper {
+    height: 100svh;
+    gap: 1rem;
+}
+
+.recommend-filter-wrap {
+    background: #cff4fc;
+}
+
+.recommend-item-wrap-header {
+    background: #cfe2ff;
+}
+
+.supported-item-hidden .item-supported {
+    display: none;
+}
+.supported-item-hidden .section-supported {
+    display: none;
+}

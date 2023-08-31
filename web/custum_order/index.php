@@ -1,3 +1,23 @@
+<?php
+require_once(__DIR__ . '/../function/User.php');
+$User = new User();
+// ログインチェック
+if (!$login_id = $User->getSession()) {
+    $User->redirectLogin();
+    exit();
+}
+
+// ユーザー情報取得
+$user = $User->getUserByLoginId($login_id);
+$user_categories = $User->getLargeCategory($login_id);
+$user_id = $login_id;
+$user_name = $user['担当者名'];
+$store_id = $user['店舗ID'];
+$store_name = $user['店舗名'];
+
+$login_info = '【店舗】' . $store_id . '：' . $store_name . '　【担当】' . $user_name;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +25,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>客注発注画面</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/../assets/css/style.css">
+    <link rel="stylesheet" href="/../assets/css/responsive.css">
 </head>
 
 <body>
     <header>
         <div class="container">
+
             <div class="store-info">
-                <P>[店舗] <span>999: 渋谷店</span> 【担当】<span>山田太郎</span> </P>
+                <P><?= $login_info ?></P>
             </div>
             <div class="order-screen">
                 <p>客注発注画面</p>
@@ -55,7 +77,7 @@
                 </div>
                 <div class="order-memo none" id="memo_display_show">
                     <label for="order-memo">メモ</label>
-                    <textarea name="memo" oninput="checkInputLength()" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）"></textarea>
+                    <textarea name="memo" id="myTextarea" placeholder="全角70文字まで（半角では１４０文字）"></textarea>
                 </div>
                 <div class="order-memo add-memo-padding-right" id="memo_display_none">
                     <a href="#" id="memo-event">メモの追加</a>
@@ -100,27 +122,29 @@
                 </div>
             </div>
         </section>
-        <section class="overlay overlay-hidden">
-
-        </section>
-        <section class="modal modal-hidden">
-            <div class="modal-close-button">
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-text">
-                <p>登録しますよろしいですか？</p>
-            </div>
-            <div class="modal-button-group">
-                <button class="modal-button-yes">はい</button>
-                <button class="modal-button-no">いいえ</button>
-            </div>
-        </section>
         <section class="register-button">
             <button class="register-button-element">登 録</button>
         </section>
+        <form action="" method="post" id="custum_order">
+            <section class="overlay overlay-hidden">
+
+            </section>
+            <section class="modal modal-hidden">
+                <div class="modal-close-button">
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-text">
+                    <p>登録しますよろしいですか？</p>
+                </div>
+                <div class="modal-button-group">
+                    <button class="modal-button-yes">はい</button>
+                    <button type="button" class="modal-button-no">いいえ</button>
+                </div>
+            </section>
+        </form>
     </main>
     <footer></footer>
-    <script src="./assets/script/input.js"></script>
+    <script src="/../assets/js/input.js"></script>
 </body>
 
 </html>

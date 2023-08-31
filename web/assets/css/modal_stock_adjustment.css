@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*-- modal --*/
+#modal-stock-adjustment .modal-dialog {
+    max-width: 1500px;
+}
+
+#modal-stock-adjustment dt {
+    font-weight: normal;
+}
+
+#modal-stock-adjustment .item-info {
+    display: inline-grid;
+    font-weight: 700;
+    gap: 8px 35px;
+    grid-template-columns: repeat(4,auto);
+    margin-bottom: 24px;
+}
+#modal-stock-adjustment .item-info .item-detail {
+    display: contents;
+}
+#modal-stock-adjustment .item-info .item-detail dt {
+    color: var(--basic-text-color);
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#modal-stock-adjustment .item-info .item-detail dd {
+    color: var(--basic-text-color);
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#modal-stock-adjustment .treasury-correction-wrap {
+
+}
+#modal-stock-adjustment .ttl-section {
+    border-bottom: 1px solid #666;
+    color: #2aa0ff;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin: 0 0 12px 0;
+}
+#modal-stock-adjustment .treasury-correction-wrap .item-count-wrap {
+    display: inline-grid;
+    gap: 4px 30px;
+    grid-template-columns: repeat(2,auto);
+    margin-bottom: 24px;
+}
+#modal-stock-adjustment .treasury-correction-wrap .item-count-wrap dl {
+    display: contents;
+}
+#modal-stock-adjustment .treasury-correction-wrap .item-count-wrap dl.correction-inventory-row {
+    color: #ff6300;
+}
+#modal-stock-adjustment .treasury-correction-wrap .item-count-wrap dt {
+
+}
+
+#modal-stock-adjustment .correction-table-wrap {
+    margin-bottom: 24px;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table {
+    color: var(--basic-text-color);
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: 1fr 120px 120px 120px 120px 120px 120px 120px 120px;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .row-table {
+    display: contents;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .thead {
+    align-items: center;
+    background-color: #e1efff;
+    border-bottom: 2px solid #333;
+    border-right: 1px solid #333;
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    line-height: 1.2;
+    padding: 10px;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .thead:first-child {
+    border-left: 2px solid #333;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .thead:last-child {
+    border-right: 2px solid #333;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .blank {
+    align-items: center;
+    border-left: 2px solid #333;
+    display: flex;
+    grid-column: 5/10;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .tbody {
+    background-color: #ffeed8;
+    padding: 10px;
+    word-wrap: break-word;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .tbody:first-child {
+    border-left: 2px solid #333;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .tbody:last-child {
+    border-right: 2px solid #333;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .row-table:last-child .tbody {
+    border-bottom: 2px solid #333;
+}
+
+#modal-stock-adjustment .correction-table-wrap .correction-table .information-change-text {
+    color: #2aa0ff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#modal-stock-adjustment .correction-table-wrap .correction-table .td-location {
+    text-align: left;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .td-input {
+    background: #fff;
+    padding: 0;
+}
+#modal-stock-adjustment .correction-table-wrap .correction-table .td-input input {
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+
+#modal-stock-adjustment .stock-parameter-wrap {
+
+}
+#modal-stock-adjustment .stock-parameter-list {
+    grid-gap: 4px 10px;
+    display: grid;
+    gap: 4px 10px;
+    grid-template-columns: repeat(2,auto 1fr);
+}
+#modal-stock-adjustment .stock-parameter-list .parameter-item {
+    display: contents;
+}

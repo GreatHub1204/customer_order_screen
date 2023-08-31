@@ -1,0 +1,1 @@
+div.download{width:150px;padding:10px 20px;border:1px solid black;margin:0 10px;border-radius:10px;background-color:khaki;cursor:pointer}div.download:hover,div.uploadBtn{font-weight:700}div.uploadBtn{display:inline-block;width:150px;padding:10px 20px;border:1px solid black;text-decoration:none;margin:0 10px;color:#fff;border-radius:10px;background-color:#4169e1;cursor:pointer}

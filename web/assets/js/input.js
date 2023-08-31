@@ -13,16 +13,17 @@ document.getElementById("memo-event").addEventListener("click", function () {
 });
 
 // 引渡し日に値を入れる
-function run() {
+
+document.getElementById("delivery").addEventListener("change", function() {
     var dateInput = document.getElementById("delivery").value;
     var dateArray = dateInput.split("-");
     var formattedDate = dateArray[2] + " / " + dateArray[1] + " / " + dateArray[0];
     document.getElementById("srt").value = formattedDate;
-}
+});
+
 
 // 文字制限
-
-function checkInputLength() {
+document.getElementById("myTextarea").addEventListener("input", function() {
     var input = document.getElementById("myTextarea").value;
     var limitedInput = "";
 
@@ -37,6 +38,9 @@ function checkInputLength() {
     }
 
     document.getElementById("myTextarea").value = limitedInput;
+})
+function checkInputLength() {
+    
 }
 
 function isFullWidth(char) {
